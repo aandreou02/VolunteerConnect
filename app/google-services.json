@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "351606429115",
+    "project_id": "volunteerconnect-36739",
+    "storage_bucket": "volunteerconnect-36739.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351606429115:android:5e200470bcc153c7ed609e",
+        "android_client_info": {
+          "package_name": "com.example.volunteerconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKZPWAMblL6thNQlICP9jj1YVIx1hoKFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

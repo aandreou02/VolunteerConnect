@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainback"
+    tools:context=".AdminActivity">
+
+    <LinearLayout
+        android:id="@+id/toolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/white"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_bold"
+            android:text="List event"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/logoutimg"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/logout"
+            android:transitionName="logout_img" />
+
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilerg0"
+        android:layout_width="201dp"
+        android:layout_height="145dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_below="@+id/toolBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/photocamera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.232" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="382dp"
+        android:layout_height="394dp"
+        android:layout_above="@+id/chatBut"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/eventTitle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Event Title"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/eventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:hint="Event Description"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/eventDate"
+            android:layout_width="match_parent"
+            android:layout_height="71dp"
+            android:hint="Event Date (e.g., 2024-05-23)"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/eventCategory"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:hint="Event Category (e.g., Food, Trees, Animals)"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:text="Submit Event"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/camBut"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="41dp"
+        android:src="@drawable/main" />
+
+    <ImageView
+        android:id="@+id/chatBut"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="39dp"
+        android:src="@drawable/chat" />
+
+    <ImageView
+        android:id="@+id/settingBut"
+        android:layout_width="47dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="39dp"
+        android:src="@drawable/sett" />
+
+</RelativeLayout>
